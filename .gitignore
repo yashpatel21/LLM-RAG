@@ -1,2 +1,3 @@
 environment.local.yml
 chroma/*
+.DS_Store
