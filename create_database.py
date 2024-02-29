@@ -7,7 +7,7 @@ import os
 import shutil
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "doc_source/"
+DATA_PATH = "doc_source"
 
 
 def load_documents():
@@ -48,7 +48,7 @@ def save_to_chroma(chunks: list[Document]):
 
 def generate_data_store():
 	documents = load_documents()
-	chunks = split_text()
+	chunks = split_text(documents)
 	save_to_chroma(chunks)
 
 
